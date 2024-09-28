@@ -2,17 +2,18 @@ import { useState } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Navigation from "./Navigation/Navigation";
+import HomePage from "../pages/HomePage";
 
 function App() {
   return (
     <>
       <Navigation />
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/movies" element={<MoviesPage />} />
+        {/* <Route path="/movies" element={<MoviesPage />} />
         <Route path="/movies/:movieId" element={<MovieDetailsPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes> */}
+        <Route path="*" element={<NotFoundPage />} /> */}
+      </Routes>
     </>
   );
 }
