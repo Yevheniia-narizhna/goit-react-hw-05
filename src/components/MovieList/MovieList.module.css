@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+.movie {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+a:hover,
+a:focus {
+  color: rgb(179, 179, 179);
+}

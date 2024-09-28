@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+import s from "./MovieList.module.css";
 export default function MovieList({ movies }) {
   return (
     <div>
-      <ul>
+      <ul className={s.list}>
         {movies.map((movie) => (
           <li key={movie.id}>
-            <h3>{movie.title}</h3>
+            <Link to={movie.id}>
+              <p className={s.movie}>{movie.title}</p>
+            </Link>
           </li>
         ))}
       </ul>
