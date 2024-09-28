@@ -8,3 +8,9 @@
   width: 100%;
   background-color: rgb(75, 75, 75);
 }
+.link {
+  color: #fff;
+}
+.active {
+  color: black;
+}

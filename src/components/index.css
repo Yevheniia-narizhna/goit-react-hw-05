@@ -18,10 +18,10 @@ a {
   color: #fff;
   text-decoration: inherit;
 }
-a:hover,
+/* a:hover,
 a:focus {
   color: rgb(179, 179, 179);
-}
+} */
 
 body {
   margin: 0;
@@ -47,9 +47,9 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+/* button:hover {
   border-color: rgb(179, 179, 179);
-}
+} */
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -60,11 +60,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover,
+  /* a:hover,
   a:focus {
     color: rgb(179, 179, 179);
   }
   button {
     background-color: #f9f9f9;
-  }
+  } */
 }
