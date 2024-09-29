@@ -52,7 +52,7 @@ export const fetchReviews = async (movieId) => {
   }
 };
 
-export const searchMovie = async (movieId) => {
+export const searchMovie = async (query) => {
   try {
     const { data } = await api.get(
       `/search/movie?include_adult=false&language=en-US&page=1&query=${query}`
