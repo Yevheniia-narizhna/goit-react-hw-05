@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  color: #f3f3f3;
+  gap: 20px;
+  padding-top: 20px;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+img {
+  border-radius: 16px;
+}
+.text,
+.info {
+  background-color: rgba(202, 202, 202, 0.3);
+  max-height: fit-content;
+  border-radius: 16px;
+  padding: 10px;
+}
