@@ -44,7 +44,7 @@ body {
   min-height: 100vh;
   background-color: rgb(156, 156, 156);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../assets/img/jag-cz-movie-theater-retro-shutterstock-594132752___25101252073.jpg);
+    url(/src/assets/img/jag-cz-movie-theater-retro-shutterstock-594132752___25101252073.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
