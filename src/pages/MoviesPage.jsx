@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { Field, Form, Formik } from "formik";
 import MovieList from "../components/MovieList/MovieList";
 import { searchMovie } from "../components/Api/Api";
+import s from "./MoviesPage.module.css";
 
 export default function MoviesPage() {
   const [movies, setMovies] = useState([]);
@@ -37,9 +38,11 @@ export default function MoviesPage() {
   return (
     <>
       <Formik initialValues={initialValues} onSubmit={handleSubmit}>
-        <Form>
-          <Field name="query" />
-          <button type="submit">Search</button>
+        <Form className={s.form}>
+          <Field className={s.input} name="query" />
+          <button className={s.button} type="submit">
+            Search
+          </button>
         </Form>
       </Formik>
       <MovieList movies={movies} />

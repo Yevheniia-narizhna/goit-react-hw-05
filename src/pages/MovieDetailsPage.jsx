@@ -5,10 +5,12 @@ import s from "./MovieDetailsPage.module.css";
 export default function MovieDetailsPage() {
   const { movieId } = useParams();
   const [movie, setMovie] = useState();
+
   const location = useLocation();
   const stateRef = useRef(location.state);
-  const [error, setError] = useState(null);
   const goBackLink = stateRef.current ?? "/";
+
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const getData = async () => {
@@ -27,7 +29,9 @@ export default function MovieDetailsPage() {
 
   return (
     <div>
-      <Link to={goBackLink}>Go back</Link>
+      <Link to={goBackLink} className={s.back}>
+        Go back
+      </Link>
       <div className={s.container}>
         <div className={s.details}>
           <img
@@ -49,17 +53,17 @@ export default function MovieDetailsPage() {
         <div className={s.info}>
           <hr />
           <h3>Additional information</h3>
-          <ul>
-            <li>
+          <ul className={s.ulinfo}>
+            <li className={s.link}>
               <Link to="cast">Cast</Link>
             </li>
 
-            <li>
+            <li className={s.link}>
               <Link to="reviews">Reviews</Link>
             </li>
           </ul>
           <Suspense fallback={<div>Loading page...</div>}>
-            <Outlet context={{ movieId }} />
+            <Outlet />
           </Suspense>
         </div>
       </div>

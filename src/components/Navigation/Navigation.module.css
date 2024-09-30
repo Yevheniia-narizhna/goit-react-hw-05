@@ -4,9 +4,12 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding: 20px;
+  padding: 4px 4px 4px 8px;
   width: 100%;
-  background-color: rgb(75, 75, 75);
+  background-color: rgba(156, 156, 156, 0.5);
+  font-size: 36px;
+  font-style: italic;
+  z-index: 999;
 }
 .link {
   color: #fff;

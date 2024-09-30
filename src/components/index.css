@@ -15,13 +15,26 @@
 
 a {
   font-weight: 500;
-  color: #131212;
+  color: #afafaf;
   text-decoration: inherit;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  opacity: 0;
+  animation: ani 1.5s forwards;
 }
-/* a:hover,
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a:hover,
 a:focus {
-  color: rgb(179, 179, 179);
-} */
+  transform: scale(1.05);
+}
 
 body {
   margin: 0;
@@ -32,9 +45,20 @@ body {
   background-color: rgb(156, 156, 156);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../assets/img/jag-cz-movie-theater-retro-shutterstock-594132752___25101252073.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  opacity: 0;
+  animation: ani 1.5s forwards;
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 ul,
 li {
@@ -71,8 +95,8 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
   }
   /* a:hover,
   a:focus {
